@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ABC1485229FC8CB0006DC61 /* ClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC1481229FC8CB0006DC61 /* ClassModel.swift */; };
+		1ABC1486229FC8CB0006DC61 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC1482229FC8CB0006DC61 /* BaseModel.swift */; };
+		1ABC1487229FC8CB0006DC61 /* TeacherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC1483229FC8CB0006DC61 /* TeacherModel.swift */; };
+		1ABC1488229FC8CB0006DC61 /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC1484229FC8CB0006DC61 /* SchoolModel.swift */; };
+		1ABC148A229FC9730006DC61 /* InfoTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC1489229FC9730006DC61 /* InfoTestModel.swift */; };
 		3A00C037A4860C9037580162 /* Pods_GPLLib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53455A7150DDC42DA0E55EE0 /* Pods_GPLLib_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,6 +34,11 @@
 
 /* Begin PBXFileReference section */
 		0274A5A8734E7BB71B6D9E3E /* Pods-GPLLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPLLib_Example.debug.xcconfig"; path = "Target Support Files/Pods-GPLLib_Example/Pods-GPLLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1ABC1481229FC8CB0006DC61 /* ClassModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassModel.swift; sourceTree = "<group>"; };
+		1ABC1482229FC8CB0006DC61 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		1ABC1483229FC8CB0006DC61 /* TeacherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherModel.swift; sourceTree = "<group>"; };
+		1ABC1484229FC8CB0006DC61 /* SchoolModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
+		1ABC1489229FC9730006DC61 /* InfoTestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTestModel.swift; sourceTree = "<group>"; };
 		373069E1E6DFB568A9A72028 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3DEF138613EB575905922308 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		53455A7150DDC42DA0E55EE0 /* Pods_GPLLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPLLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +90,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		1ABC1480229FC8B70006DC61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1ABC1489229FC9730006DC61 /* InfoTestModel.swift */,
+				1ABC1482229FC8CB0006DC61 /* BaseModel.swift */,
+				1ABC1481229FC8CB0006DC61 /* ClassModel.swift */,
+				1ABC1484229FC8CB0006DC61 /* SchoolModel.swift */,
+				1ABC1483229FC8CB0006DC61 /* TeacherModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +126,7 @@
 		607FACD21AFB9204008FA782 /* Example for GPLLib */ = {
 			isa = PBXGroup;
 			children = (
+				1ABC1480229FC8B70006DC61 /* Model */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -358,7 +381,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ABC1487229FC8CB0006DC61 /* TeacherModel.swift in Sources */,
+				1ABC1488229FC8CB0006DC61 /* SchoolModel.swift in Sources */,
+				1ABC148A229FC9730006DC61 /* InfoTestModel.swift in Sources */,
+				1ABC1485229FC8CB0006DC61 /* ClassModel.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				1ABC1486229FC8CB0006DC61 /* BaseModel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

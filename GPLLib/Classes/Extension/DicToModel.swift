@@ -60,7 +60,7 @@ let ModelArr:String = "ModelArr"
 //}
 
 
-extension NSObject{
+extension NSObject {
     @objc func smStatementKey() ->[String:String]{
         return ["":""]
     }
@@ -73,7 +73,7 @@ extension NSObject{
     ///
     /// - Parameter keyValues: 原数据字典
     /// - Returns: 转换后的模型
-    class func objectWithKeyValues(keyValues:Dictionary<String, AnyObject>) -> AnyObject {
+    public class func objectWithKeyValues(keyValues:Dictionary<String, AnyObject>) -> AnyObject {
         let model = self.init()
         let properties = AllProperties(self)
         model.setValuesForProperties(properties, keyValues: keyValues)
@@ -84,7 +84,7 @@ extension NSObject{
     ///
     /// - Parameter array: 原数据数组
     /// - Returns: 转换后的模型数组
-    class func objectArrayForModelArr(_ array:Array<Any>) -> [AnyObject]{
+    public class func objectArrayForModelArr(_ array:Array<Any>) -> [AnyObject]{
         return objectArrayWithKeyValuesArray(array , self)
     }
     
@@ -172,14 +172,14 @@ extension NSObject{
             }
             else {
                 guard let value = currentDict[property.property] else {
-                    debugPrint("Debug: " + "\(property.propertyName)" + "模型与字典的key不匹配")
+                    debugPrint("Debug: " + "\(String(describing: property.propertyName))" + "模型与字典的key不匹配")
                     return
                 }
                 let type = NSStringFromClass(object_getClass(value)!)
                 if type != "NSNull" {
                     self.setValue(value, forKey: property.propertyName as String)
                 }else {
-                    debugPrint("Debug: " + "\(property.propertyName)" + "值为nil")
+                    debugPrint("Debug: " + "\(String(describing: property.propertyName))" + "值为nil")
                 }
 
             }
@@ -189,13 +189,14 @@ extension NSObject{
     
 }
     
-class GPLProperty{
+class GPLProperty: NSObject {
     var propertyName:String!
     var property:String!
     var modelType:ModelType = .Normal
     var typeClass:AnyClass?
 
     init(_ tmProperty:objc_property_t ,_ dict:Dictionary<String, String> , _ rdict:Dictionary<String, String>){
+        super.init()
         let name = ivar_getName(tmProperty)
         self.propertyName = String(cString: name!)
         self.analysisTMModel(values: self.propertyName, dict, rdict)
