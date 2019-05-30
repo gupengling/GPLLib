@@ -1,19 +1,20 @@
 {
   "name": "GPLLib",
-  "version": "0.1.0",
-  "summary": "A short description of GPLLib.",
+  "version": "0.1.1",
+  "summary": "GPLLib used to Json -> Map -> Model",
+  "swift_version": "4.0",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/顾鹏凌/GPLLib",
+  "homepage": "https://github.com/gupengling/GPLLib",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "顾鹏凌": "aigupengling@163.com"
+    "gupengling": "aigupengling@163.com"
   },
   "source": {
-    "git": "https://github.com/顾鹏凌/GPLLib.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/gupengling/GPLLib.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"

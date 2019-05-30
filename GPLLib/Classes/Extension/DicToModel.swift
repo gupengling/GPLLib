@@ -61,11 +61,11 @@ let ModelArr:String = "ModelArr"
 
 
 extension NSObject {
-    @objc func smStatementKey() ->[String:String]{
+    @objc public func smStatementKey() ->[String:String]{
         return ["":""]
     }
     
-    @objc func smReplacedKey() ->[String:String]{
+    @objc public func smReplacedKey() ->[String:String]{
         return ["":""]
     }
     
@@ -189,7 +189,7 @@ extension NSObject {
     
 }
     
-class GPLProperty: NSObject {
+@objc class GPLProperty: NSObject {
     var propertyName:String!
     var property:String!
     var modelType:ModelType = .Normal
