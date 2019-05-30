@@ -1,0 +1,6 @@
+framework module Pods_GPLLib_Example {
+  umbrella header "Pods-GPLLib_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
