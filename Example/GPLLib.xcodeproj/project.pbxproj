@@ -12,6 +12,8 @@
 		1ABC1487229FC8CB0006DC61 /* TeacherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC1483229FC8CB0006DC61 /* TeacherModel.swift */; };
 		1ABC1488229FC8CB0006DC61 /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC1484229FC8CB0006DC61 /* SchoolModel.swift */; };
 		1ABC148A229FC9730006DC61 /* InfoTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC1489229FC9730006DC61 /* InfoTestModel.swift */; };
+		1ABC14B4229FD10E0006DC61 /* DicToModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC14B0229FD10E0006DC61 /* DicToModel.swift */; };
+		1ABC14B6229FD10E0006DC61 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 1ABC14B3229FD10E0006DC61 /* .gitkeep */; };
 		3A00C037A4860C9037580162 /* Pods_GPLLib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53455A7150DDC42DA0E55EE0 /* Pods_GPLLib_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 		1ABC1483229FC8CB0006DC61 /* TeacherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherModel.swift; sourceTree = "<group>"; };
 		1ABC1484229FC8CB0006DC61 /* SchoolModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
 		1ABC1489229FC9730006DC61 /* InfoTestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTestModel.swift; sourceTree = "<group>"; };
+		1ABC14B0229FD10E0006DC61 /* DicToModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DicToModel.swift; sourceTree = "<group>"; };
+		1ABC14B3229FD10E0006DC61 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		373069E1E6DFB568A9A72028 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3DEF138613EB575905922308 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		53455A7150DDC42DA0E55EE0 /* Pods_GPLLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPLLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,9 +106,44 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		1ABC14AD229FD10E0006DC61 /* GPLLib */ = {
+			isa = PBXGroup;
+			children = (
+				1ABC14AE229FD10E0006DC61 /* Classes */,
+				1ABC14B2229FD10E0006DC61 /* Assets */,
+			);
+			name = GPLLib;
+			path = ../GPLLib;
+			sourceTree = "<group>";
+		};
+		1ABC14AE229FD10E0006DC61 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1ABC14AF229FD10E0006DC61 /* Extension */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1ABC14AF229FD10E0006DC61 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1ABC14B0229FD10E0006DC61 /* DicToModel.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1ABC14B2229FD10E0006DC61 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1ABC14B3229FD10E0006DC61 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				1ABC14AD229FD10E0006DC61 /* GPLLib */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for GPLLib */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -272,6 +311,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				1ABC14B6229FD10E0006DC61 /* .gitkeep in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +428,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				1ABC1486229FC8CB0006DC61 /* BaseModel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1ABC14B4229FD10E0006DC61 /* DicToModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

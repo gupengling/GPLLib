@@ -1,6 +1,6 @@
 {
   "name": "GPLLib",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "GPLLib used to Json -> Map -> Model",
   "swift_version": "4.0",
   "description": "TODO: Add long description of the pod here.",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/gupengling/GPLLib.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
